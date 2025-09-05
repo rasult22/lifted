@@ -2,26 +2,27 @@
 import "@fontsource-variable/inter";
 import "~/styles/index.css";
 import Header from "~/components/header.astro";
+import MainBlock from "~/components/main-block.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "LiftEd - образовательная платформа для учителей и учеников на базе искусственного интеллекта";
 ---
 
 <!doctype html>
-<html lang="en" class="h-full motion-safe:scroll-smooth">
+<html lang="ru" class="h-full motion-safe:scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Astro Landing Page</title>
+    <title>LiftEd - Образовательная платформа</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="LiftEd" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
@@ -32,5 +33,6 @@ const description =
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
     <Header />
+    <MainBlock />
   </body>
 </html>

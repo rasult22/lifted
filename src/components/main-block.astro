@@ -1,0 +1,37 @@
+---
+import Button from './ui/button.astro';
+---
+
+<section class="relativemin-h-screen flex items-center">
+  <div class="relative max-w-7xl mx-auto px-4 pt-[64px] text-center">
+    <div class="max-w-[900px] mx-auto relative z-[2]">
+      <!-- Badge -->
+      <div class="inline-flex items-center px-4 py-2 rounded-full text-app-blue text-[20px] leading-[24px] font-semibold mb-5">
+        ФОО, СОР, СОЧ, тренажёры, тестовые задания и олимпиады
+      </div>
+      
+      <!-- Main heading -->
+      <div class="font-bold text-[48px] text-app-blue mb-5 leading-[58px] max-w-[]">
+        LiftEd - здесь технологии работают
+        на педагога и ученика
+      </div>
+      
+      <!-- Subtitle -->
+      <p class="text-[18px] leading-[27px] text-[#3A4951] mb-5 mx-auto">
+        Образовательная платформа для учителей и учеников на базе
+        <br class="hidden sm:block" />
+        искусственного интеллекта
+      </p>
+      
+      <!-- CTA Button -->
+      <div class="flex justify-center">
+        <Button href="https://lifted.kz/auth/sign-up">
+          Попробовать бесплатно
+        </Button>
+      </div>
+    </div>
+    <div class="overflow-hidden relative mt-[-80px] z-[1]">
+      <img class="w-[1200px] mb-[-219px]" src="/optimized/cabinet.webp" alt="">
+    </div>
+  </div>
+</section>
