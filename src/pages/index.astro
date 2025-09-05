@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/inter";
 import "~/styles/index.css";
+import Header from "~/components/header.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -30,6 +31,6 @@ const description =
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
-    <div class="">Hello world</div>
+    <Header />
   </body>
 </html>
