@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import "~/styles/index.css";
 import Header from "~/components/header.astro";
 import MainBlock from "~/components/main-block.astro";
+import AboutBlock from "~/components/about-block.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -34,5 +35,6 @@ const description =
   >
     <Header />
     <MainBlock />
+    <AboutBlock />
   </body>
 </html>
