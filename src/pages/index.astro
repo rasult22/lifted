@@ -5,6 +5,7 @@ import Header from "~/components/header.astro";
 import MainBlock from "~/components/main-block.astro";
 import AboutBlock from "~/components/about-block.astro";
 import ForTeachers from "~/components/for-teachers.astro";
+import ForStudent from "~/components/for-student.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -38,5 +39,6 @@ const description =
     <MainBlock />
     <AboutBlock />
     <ForTeachers />
+    <ForStudent />
   </body>
 </html>
