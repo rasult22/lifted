@@ -11,18 +11,24 @@ const menuItems = [
 ];
 ---
 
-<header class="bg-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex justify-between md:justify-center items-center py-6">
+<header class="bg-white px-4 sm:px-0 md:px-0">
+  <div class="max-w-7xl mx-auto sm:p-4 sm:border-b sm:border-b-[#F4F5F6]">
+    <div class="flex justify-between md:justify-center items-center py-6 sm:py-0">
       <!-- Logo -->
-      <div class="flex items-center md:hidden">
+       <div class="hidden sm:block">
+         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
+          <path d="M43.8805 28.9552C43.8805 29.6147 43.3459 30.1493 42.6864 30.1493H35.2237C34.5643 30.1493 34.0297 30.6838 34.0297 31.3433V38.806C34.0297 39.4654 33.4951 40 32.8357 40H25.0745C24.415 40 23.8805 39.4654 23.8805 38.806V31.0448C23.8805 30.3853 24.415 29.8507 25.0745 29.8507H32.5372C33.1966 29.8507 33.7312 29.3162 33.7312 28.6567V21.194C33.7312 20.5346 34.2658 20 34.9252 20H42.6864C43.3459 20 43.8805 20.5346 43.8805 21.194V28.9552Z" fill="#FF4900"/>
+          <path d="M39.7015 8.95522C39.7015 9.61467 39.1669 10.1493 38.5074 10.1493H31.0447C30.3853 10.1493 29.8507 10.6838 29.8507 11.3433V18.806C29.8507 19.4654 29.3161 20 28.6567 20H21.194C20.5346 20 20 20.5346 20 21.194V28.6567C20 29.3162 19.4654 29.8507 18.8059 29.8507H11.3433C10.6838 29.8507 10.1492 30.3853 10.1492 31.0448V38.5075C10.1492 39.1669 9.61464 39.7015 8.95519 39.7015H1.194C0.534554 39.7015 -3.05176e-05 39.1669 -3.05176e-05 38.5075V30.7463C-3.05176e-05 30.0868 0.534555 29.5522 1.194 29.5522H8.65668C9.31613 29.5522 9.85072 29.0177 9.85072 28.3582V20.8955C9.85072 20.2361 10.3853 19.7015 11.0447 19.7015H18.5074C19.1669 19.7015 19.7015 19.1669 19.7015 18.5075V11.0448C19.7015 10.3853 20.236 9.85075 20.8955 9.85075H28.3582C29.0176 9.85075 29.5522 9.31616 29.5522 8.65672V1.19403C29.5522 0.534586 30.0868 0 30.7462 0H38.5074C39.1669 0 39.7015 0.534585 39.7015 1.19403V8.95522Z" fill="#0149FF"/>
+        </svg>
+       </div>
+      <div class="flex items-center md:hidden sm:hidden">
         <a href="/" class="flex items-center py-1">
           <img src="/optimized/lifted-icon.webp" alt="LiftEd" class="max-w-[280px]" />
         </a>
       </div>
 
       <!-- Navigation Menu -->
-      <nav class="flex items-center space-x-8">
+      <nav class="flex items-center space-x-8 sm:hidden">
         {menuItems.map((item) => (
           <a 
             href={item.href} 
@@ -34,9 +40,14 @@ const menuItems = [
       </nav>
 
       <!-- Register Button -->
-      <div class="flex items-center md:hidden">
+      <div class="flex items-center md:hidden sm:hidden">
         <Button href="https://lifted.kz/auth/sign-in">
           Зарегистрироваться
+        </Button>
+      </div>
+      <div class="items-center hidden sm:flex">
+        <Button href="https://lifted.kz/auth/sign-in">
+          Попробовать
         </Button>
       </div>
    
