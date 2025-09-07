@@ -1,0 +1,143 @@
+---
+import Button from './ui/button.astro';
+import CheckIcon from './ui/check-icon.astro';
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <!-- Badge -->
+      <div class="inline-flex items-center px-4 py-2 rounded-full text-[#D1E4FF] bg-app-blue text-[14px] leading-[20px] font-semibold mb-2">
+        Курсы повышения квалификации
+      </div>
+      
+      <!-- Main heading -->
+      <h2 class="font-bold text-[34px]  text-[#0F172B] mb-3 leading-[41px]">
+        Повышайте квалификацию вместе с Lifted
+      </h2>
+      
+      <!-- Subtitle -->
+      <p class="text-[16px] leading-[24px] text-[#283237] max-w-2xl mx-auto">
+        Курсы согласованы с Министерством просвещения РК (сертификаты на Ustaz).
+      </p>
+    </div>
+
+    <!-- Course Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- ИИ в образовании -->
+      <div class="bg-white rounded-2xl p-6 border border-[#E2E8F0] flex flex-col items-start">
+        <h3 class="font-medium text-[16px] py-1 px-3 rounded-full text-[#0056D0] bg-[#D1E4FF] mb-4 leading-[24px]">
+          ИИ в образовании
+        </h3>
+        
+        <ul class="space-y-4 mb-6">
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              ИИ как инструмент вдохновения и творчества педагога
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Подготовка заданий, тестов и тренажёров
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Практика по генерации материалов
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Сертификат: 80 ч.
+            </span>
+          </li>
+        </ul>
+        
+        <Button href="#" class="block text-center w-full mt-auto">
+          Узнать подробнее
+        </Button>
+      </div>
+
+      <!-- Методика Lesson Study -->
+      <div class="bg-white rounded-2xl p-6 border border-[#E2E8F0] flex flex-col items-start">
+        <h3 class="font-medium text-[16px] py-1 px-3 rounded-full text-[#9E3F00] bg-[#FFF0CB] mb-4 leading-[24px]">
+          Методика Lesson Study
+        </h3>
+        
+        <ul class="space-y-4 mb-6">
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Теория и практика Lesson Study
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              ИИ-инструменты для анализа
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Планы, наблюдения, рефлексия
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Сертификат: 80 ч.
+            </span>
+          </li>
+        </ul>
+        
+        <Button href="#" class="block text-center w-full mt-auto">
+          Узнать подробнее
+        </Button>
+      </div>
+
+      <!-- Инструменты по английскому -->
+      <div class="bg-white rounded-2xl p-6 border border-[#E2E8F0] flex flex-col items-start">
+        <h3 class="font-medium text-[16px] py-1 px-3 rounded-full text-[#1E6D00] bg-[#E1F7D8] mb-4 leading-[24px]">
+          Инструменты по английскому
+        </h3>
+        
+        <ul class="space-y-4 mb-6">
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Слушание, говорение, чтение, письмо
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Дифференцированный подход в группе
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Практические задания
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <CheckIcon />
+            <span class="text-[16px] leading-[24px] text-[#4E616B]">
+              Сертификат: 80 ч.
+            </span>
+          </li>
+        </ul>
+        
+        <Button href="#" class="block text-center w-full mt-auto">
+          Узнать подробнее
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
