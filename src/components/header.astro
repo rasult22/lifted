@@ -13,16 +13,16 @@ const menuItems = [
 
 <header class="bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="flex justify-between items-center py-6">
+    <div class="flex justify-between md:justify-center items-center py-6">
       <!-- Logo -->
-      <div class="flex items-center">
+      <div class="flex items-center md:hidden">
         <a href="/" class="flex items-center py-1">
           <img src="/optimized/lifted-icon.webp" alt="LiftEd" class="max-w-[280px]" />
         </a>
       </div>
 
       <!-- Navigation Menu -->
-      <nav class="hidden md:flex items-center space-x-8">
+      <nav class="flex items-center space-x-8">
         {menuItems.map((item) => (
           <a 
             href={item.href} 
@@ -34,7 +34,7 @@ const menuItems = [
       </nav>
 
       <!-- Register Button -->
-      <div class="flex items-center">
+      <div class="flex items-center md:hidden">
         <Button href="https://lifted.kz/auth/sign-in">
           Зарегистрироваться
         </Button>

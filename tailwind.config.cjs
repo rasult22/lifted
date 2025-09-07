@@ -12,6 +12,11 @@ module.exports = {
         secondary: "var(--color-secondary)",
         "app-blue": "#076EFF",
       },
+      screens: {
+        lg: { min: "1000px", max: '4000px' },
+        md: { max: "1000px", min: "700px" },
+        sm: { max: "700px", min: "0px" },
+      },
     },
   },
   plugins: [require("tailwindcss-fluid-type")],
