@@ -3,7 +3,7 @@ import Button from './ui/button.astro';
 
 // Menu items array
 const menuItems = [
-  { text: 'Главная', href: '/' },
+  { text: 'Главная', href: '#main' },
   { text: 'О платформе', href: '#about' },
   { text: 'Для учителей', href: '#teachers' },
   { text: 'Для учеников', href: '#students' },
@@ -11,7 +11,7 @@ const menuItems = [
 ];
 ---
 
-<header class="bg-white px-4 sm:px-0 md:px-0">
+<header id="main" class="bg-white px-4 sm:px-0 md:px-0">
   <div class="max-w-7xl mx-auto sm:p-4 sm:border-b sm:border-b-[#F4F5F6]">
     <div class="flex justify-between md:justify-center items-center py-6 sm:py-0">
       <!-- Logo -->
